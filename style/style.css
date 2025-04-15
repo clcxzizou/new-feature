@@ -20,6 +20,7 @@ font-family: 'Outfit';
     height: 75px;
     width: 100%;
     box-shadow: 0 0 0 black;
+    z-index: 1;
 
 }
 
@@ -67,7 +68,7 @@ font-family: 'Outfit';
 .register-btn{
     height: 40px;
     width: 100px;
-    border-radius: 0.3rem;
+    border-radius: 100px;
     border: none;
     font-size: 16px;
     font-weight: 550;
@@ -78,18 +79,17 @@ font-family: 'Outfit';
 
 .login-btn{
 background: none;
-border: 1.5px solid white;
 color: white;
-transition: border 0.2s ease;
+transition:  0.2s ease;
 }
 
 
 .login-btn:hover{
-  border: 1.8px solid white;
+  background:#8ea6e0;
 }
 
 .signup-btn{
-    color: #3961c8;
+    color: #3B82F6;
 }
 
 
@@ -135,13 +135,16 @@ a i{
   justify-content: space-evenly;
   padding: 0 20px;
   text-align: center;
-  align-items: center;
   background: #EAF2FF;
 }
 
 .about-us-box{
   height: 300px;
   width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+  align-items: center;
   /* border-radius: 20px; */
   /* box-shadow:0px 1px 5px 0px #9d8f8f; */
 }
@@ -153,4 +156,235 @@ a i{
 
 .about-us-box p{
   font-size: 20px;
+}
+
+.top-courses{
+  padding: 20px;
+  width: 100%;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+#top-courses-h1{
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.course-box{
+  /* height: 420px; */
+  max-width: 400px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: white;
+  box-shadow: -1px 2px 6px #79747480;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+
+.course-box:hover{
+  transform: translateY(-5px);
+}
+
+.course-img{
+  height: 230px;
+  width: 100%;
+  display: block;
+  margin: auto;
+  
+}
+
+.purchase h2{
+  white-space: nowrap;
+}
+
+.course-details{
+  padding: 10px;
+}
+
+.course-badges-wrraper{
+  display: flex;
+  gap: 5px;
+}
+
+.course-badge{
+  border-radius: 20px;
+  padding: 5px;
+  color: white;
+}
+
+.rating{
+  color: rgb(255, 208, 0);
+}
+
+.purchase{
+  display: flex;
+  gap: 15px;
+
+}
+
+.purchase-btn{
+  height: 30px;
+  width: 100px;
+  border-radius: 15px;
+  padding: 5px;
+  border: none;
+  background: #56C288;
+
+}
+
+.courses-wrraper{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.prev , .next{
+  position: absolute;
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.prev{
+  left: 10px;
+  box-shadow: -1px -1px 10px 2px #949292;
+}
+
+.next{
+  right: 10px;
+  box-shadow: -1px -1px 10px 2px #9e9e9e;
+}
+
+#green-badge{background: #56C288;}
+
+#blue-badge{background: #3DB2FF;}
+
+#yellow-badge{background: #FFB266;}
+
+.top-category{
+  margin-bottom: 30px;;
+}
+
+
+.top-category h1{
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+
+
+.category-wrraper h1{
+  text-align: center;
+}
+
+.category-wrraper{
+  display: flex;
+  justify-content: space-around;
+  background:white;
+  padding: 30px;
+  flex-wrap: wrap;
+}
+
+.category-box h1{
+  font-size: 30px;
+}
+
+.category-box{
+  height: 200px;
+  width: 300px;
+  border-radius: 10px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -1px 2px 15px #c3c2c2;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+  /* flex: 0 0 calc(33.333% - 13.33px); */
+}
+
+.category-box:hover{
+  transform: translateY(-5px);
+}
+
+.category-img{
+  height: 100px;
+}
+.see-all{
+  display: block;
+  margin: auto;
+  padding: 10px;
+  width: 200px;
+  border-radius: 100px;
+  font-size: 20px;
+  border: none;
+  background: #3B82F6;
+  color: white;
+  height: 50px;
+  cursor: pointer;
+
+}
+
+.jobs{
+}
+
+.jobs h1{
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.jobs-wrraper{
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 60%;
+}
+
+.job-box{
+  background: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  align-items: center;
+  border: 0.2px solid rgba(0, 0, 0, 0.247);
+}
+
+.job-badge{
+  width: 20%;
+  align-self: start;
+}
+
+.job-details{
+  width: 60%;
+}
+
+.job-title{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.job-type{
+  width: 20%;
+  align-self: end;
+}
+
+
+
+.asButton{
+  background: rgba(80, 80, 80, 0.034);
+  text-align: center;
+  padding: 10px;
+  border-radius: 100px;
+  /* font-size: 20px; */
+  width: 100px;
 }
